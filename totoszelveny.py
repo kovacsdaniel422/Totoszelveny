@@ -21,8 +21,7 @@ print(f"A nyertes totószelvény számai: {nyertes_szelveny}")
 
 osszesSzelveny = []  # ez a lista fogja tárolni a szelvényeket
 
-for j in range(random.randint(10000,
-                              15000)):  # legenerálunk random számú szelvényt(https://docs.python.org/3/library/random.html#random.randint)
+for j in range(random.randint(10000,150000)):  # legenerálunk random számú szelvényt(https://docs.python.org/3/library/random.html#random.randint)
     szelveny = []
 
     for i in range(0, 14):  # egy darab szelvény létrehozása szintén listaként
@@ -63,6 +62,7 @@ for i in osszesSzelveny:  # ebben a ciklusban összehasonlítjuk a létrehozott 
     # meghatározzuk az összes találat számát a találatokat tartalmazó listák hossza alapján (https://docs.python.org/3/library/functions.html#len)
 osszestalalat = len(tizesek) + len(tizenegy) + len(tizenketto) + len(tizenharom) + len(tizennegy)
 # kiírjuk a találatokat egyenként
+print(f"Összes szelvény száma: {len(osszesSzelveny)}")
 print(f"Összes találat száma: {osszestalalat}")
 print(f"\nTizes találatok száma: {len(tizesek)}")
 print(f"Tizes szelvények: ")
